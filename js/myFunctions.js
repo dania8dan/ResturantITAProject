@@ -690,11 +690,11 @@ function showOrderSummary() {
         total += meal.price;
     });
     
-    // حسم 5% ضريبة
+    //  5% زيادة ضريبة 
     const tax = total * 0.05;
     const finalTotal = total + tax;
     
-    // بناء قائمة الوجبات
+    // بناء قائمة الوجبات المختارة
     let mealsList = '';
     selectedMeals.forEach(meal => {
         mealsList += `<li>${meal.code} - ${meal.title} : ${meal.price.toLocaleString()} ل.س</li>`;
